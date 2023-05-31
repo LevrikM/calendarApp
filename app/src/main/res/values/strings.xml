@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">calendarApp</string>
+
+
+    <string name="showDaysTitle">Розклад</string>
+
+    <string name="addLessonTitle">Додати новий предмет</string>
+    <string name="nameLessonHint">Назва предмету</string>
+    <string name="groupLessonHint">Назва групи</string>
+    <string name="dateLessonHint">Дата проведення</string>
+    <string name="timeLessonHint">Час проведення</string>
+    <string name="roomLessonHint">Аудиторія</string>
+
+    <string name="addLessonBtn">Додати</string>
+    <string name="cancelAddBtn">Скасувати</string>
+
+</resources>
