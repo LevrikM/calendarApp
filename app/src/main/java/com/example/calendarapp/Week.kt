@@ -119,10 +119,12 @@ class WeekAdapter(private val daysList : ArrayList<Day>) : RecyclerView.Adapter<
         day.position = position
         holder.dayName.text = day.name
         holder.dayDate.text = day.date
-        holder.dayLessons.adapter = DayAdapter(day.lessons)
         day.dayView = holder.itemView
 
-        val adapter2 = DayAdapter(week.days[position].lessons)
+        val adapter2 = DayAdapter()
+
+        adapter2.lessons = week.days[position].lessons
+
         holder.dayLessons.adapter = adapter2
         holder.dayLessons.layoutManager = LinearLayoutManager(parent.context)
 

@@ -168,6 +168,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun deleteAllDays() {
+        week.days.clear()
+        adapter.notifyDataSetChanged()
         clearDaysFile()
         saveDaysToFile(false)
     }
